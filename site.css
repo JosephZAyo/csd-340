@@ -1,0 +1,31 @@
+/*Author: Joseph Ayo
+Assignment 3.2 - CSD 340*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Styling for h1, h2, h3, h4 */
+h1, h2, h3, h4 {
+    background-color: #4CAF50; 
+    color: white; 
+    border: 1px solid #D6A800; 
+    padding: 10px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #D6A800; 
+}
+
+a:visited {
+    color: #2E8B57; 
+}

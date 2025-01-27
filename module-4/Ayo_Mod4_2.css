@@ -1,0 +1,60 @@
+/* Author: Joseph Ayo
+Assignment 4.2 - CSD 340*/
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 10%;
+}
+
+
+#container {
+    text-align: center;
+}
+
+
+h1 {
+    color: rgba(0, 128, 0, 1); 
+    text-align: center;
+}
+
+
+h3 {
+    color: rgba(255, 165, 0, 1); 
+    text-align: center;
+}
+
+
+figure {
+    text-align: center;
+}
+
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(255, 69, 0, 1); 
+}
+
+
+.gallery-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
