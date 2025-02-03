@@ -1,0 +1,99 @@
+/*Author: Joseph Ayo-->
+<!--Assignment 4.2 - CSD 340-->*/
+/* Header */
+header {
+    background-color: #4CAF50; /* Appropriate background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center the text */
+}
+
+/* Header h1 */
+h1 {
+    font-weight: 400; /* Set weight to 400 */
+}
+
+/* Navbar Styles */
+#navbar {
+    overflow: hidden; /* Prevent content from overflowing */
+    background-color: #333; /* Appropriate background color */
+    border-bottom: 15px solid #4CAF50; /* Bottom border with color */
+}
+
+/* Navbar Links */
+#navbar a {
+    float: left; /* Float the text to the left */
+    display: block; /* Make the link a block element */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Navbar Link Hover Styles */
+#navbar a:hover {
+    background-color: #ddd; /* Hover background color */
+    color: black; /* Hover text color */
+}
+
+/* Container Styles */
+#container {
+    margin-top: 2%; /* Top margin */
+    margin-left: 5%; /* Left margin */
+    margin-right: 5%; /* Right margin */
+    padding: 10px; /* Padding */
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: 0.3s; /* Transition time for hover effect */
+    width: 50%; /* Set width */
+}
+
+/* Card Title Styles */
+.card-title {
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Font size */
+    color: #333; /* Text color */
+    font-weight: 400; /* Font weight */
+}
+
+/* Card Content Styles */
+.card-content {
+    padding: 2px 16px; /* Padding */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Box shadow when hovering */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Same background color as the header */
+    position: absolute; /* Position it at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding */
+}
+
+/* Footer Paragraph Styles */
+footer p {
+    color: white; /* Text color */
+    font-weight: 400; /* Font weight */
+    text-align: right; /* Float text to the right */
+    padding-right: 10px; /* Right padding */
+    font-style: italic; /* Italic font style */
+}
+
+/* Footer Link Styles */
+footer a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+}
+
+/* Footer Link Hover Styles */
+footer a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
