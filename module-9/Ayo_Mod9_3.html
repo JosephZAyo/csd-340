@@ -1,0 +1,63 @@
+<!--Author: Joseph Ayo-->
+<!--Assignment 9.3 - CSD 340-->
+<!--February 16, 2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayo">
+    <meta name="description" content="Assignment 2.2 - Building a Web Page Exercise, Part 2">
+    <meta name="keywords" content="HTML, CSS, Bellevue University, assignment">
+    
+    <title>CSD 340 Development with HTML and CSS</title>
+
+    
+    <script>
+        // JavaScript variables for the span replacements
+        let word1 = "Captain America: Brave New World";
+        let word2 = "Samuel Sterns";
+        let word3 = "change";
+        
+        function replaceText(id, word) {
+            document.getElementById(id).textContent = word;
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>On Brave New World</h2>
+
+        <!-- Paragraph 1 -->
+        <p class="intro">Since I have the rare opportunity to write about whatever comes to mind, I want to write a short, spoiler-free blurb on my thoughts on the very recent Marvel movie, <span id="word1">______</span>. As a long-time Marvel watcher, I've come to really appreciate
+        the Marvel Cinematic Universe, so I was very interested to see what kind of story they could come up with after struggling with recent movies. Brave New World follows the first major escapade of Sam Wilson, the brand-new Captain America following the late Steve Rogers
+        and the events of Falcon & The Winter Soldier.  
+            <button onclick="replaceText('word1', word1)">Captain America: Brave New World</button>
+        </p>
+
+        <!-- Paragraph 2 -->
+        <p>Many of the popular trailers for the movie feature the Red Hulk, suggesting him to be the main antagonist. In reality, there are appearances from several popular villains from the Captain America comics, including Tim Blake Nelson as <span id="word2">______</span> and
+         Giancarlo Esposito as Sidewinder. Each of these villains had their moment to shine, and their inclusions spell good things for the future of the MCU in my humble opinion.
+            <button onclick="replaceText('word2', word2)">Samuel Sterns</button>
+        </p>
+
+        <!-- Paragraph 3 -->
+        <p>One other important theme that the movie broaches is the idea of <span id="word3">______</span>. Sam struggles with being a leader of a nation that hasn't fully accepted him yet as a replacement for what was lost (Steve Rogers), and similarly our President in-universe,Thaddeus Ross,
+            struggles with losing his daughters' acceptance of him as a father, as well as our main antagonist Samuel Sterns, who grows resentful of the world for not accepting him after he was forcibly turned into a gamma radiation experiment.
+
+            <button onclick="replaceText('word3', word3)">change</button>
+        </p>
+
+        <!-- Horizontal line -->
+        <hr>
+
+        <!-- Bellevue University address -->
+        <address>
+            <p><a href="https://www.bellevue.edu">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
