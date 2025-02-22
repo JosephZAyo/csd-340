@@ -1,0 +1,65 @@
+<!--Author: Joseph Ayo-->
+<!--Assignment 10.3 - CSD 340-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        function swapImage(clickedImage) {
+            var mainImg = document.getElementById("mainImage");
+            var tempSrc = mainImg.src;
+            mainImg.src = clickedImage.src;
+            clickedImage.src = tempSrc;
+        }
+
+        function invertImage() {
+            document.getElementById("mainImage").style.filter = "invert(100%)";
+        }
+
+        function resetImage() {
+            document.getElementById("mainImage").style.filter = "invert(0%)";
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .thumbnail {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        .thumbnail:hover {
+            border-color: red;
+        }
+        .mainImage {
+            width: 400px;
+            height: 250px;
+            border: 4px solid black;
+            transition: filter 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    
+    <p>Click an image below to swap it with the main image.</p>
+    <p>Hover over the main image to invert its color scheme.</p>
+    
+    <img id="mainImage" src="trio.jpg" alt="The Big 3" class="mainImage" 
+        onmouseover="invertImage()" onmouseout="resetImage()">
+
+    <div>
+        <img src="michaelj.webp" alt="Michael Jordan" class="thumbnail" onclick="swapImage(this)">
+        <img src="kobe.avif" alt="Kobe Bryant" class="thumbnail" onclick="swapImage(this)">
+        <img src="lebron.png" alt="Lebron James" class="thumbnail" onclick="swapImage(this)">
+    </div>
+
+</body>
+</html>
